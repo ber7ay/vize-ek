@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolyo | Berkay Öztürk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="imlec-dis"></div>
+<div id="imlec-ic"></div>
+
+<nav>
+  <a href="#anasayfa" class="logo">&lt;Berkay Öztürk&gt;</a>
+  <ul class="nav-linkler" id="nav-menu">
+    <li><a href="#anasayfa">Ana Sayfa</a></li>
+    <li><a href="#hakkimda">Hakkımda</a></li>
+    <li><a href="#yetenekler">Yetenekler</a></li>
+    <li><a href="#projeler">Projeler</a></li>
+    <li><a href="#iletisim">İletişim</a></li>
+  </ul>
+  <div style="display:flex;gap:0.75rem;align-items:center;">
+    <button id="tema-buton" aria-label="Tema değiştir">☀</button>
+    <button class="hamburger" id="hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="anasayfa">
+  <div class="hero-etiket">Merhaba,Ben Berkay</div>
+  <h1 class="hero-baslik">
+    <span class="isim-vurgu">Berkay Öztürk</span><br>
+    Yazılım Geliştirici
+  </h1>
+  <p class="daktilo-satir">
+    &gt; <span id="daktilo-metin"></span><span class="daktilo-imlec"></span>
+  </p>
+  <div class="hero-alt">
+    <a href="#projeler" class="buton-birincil">Projelerimi Gör</a>
+    <a href="#iletisim" class="buton-ikincil">İletişime Geç</a>
+  </div>
+  <div class="hero-arkaplan-desen"></div>
+</section>
+
+<section id="hakkimda">
+  <h2 class="bolum-baslik gizli" data-sayi="01">Hakkımda</h2>
+  <div class="ayirici"></div>
+  <div class="hakkimda-izgara">
+    <div class="profil-kart gizli">
+      <div class="profil-kart-placeholder">
+        <div class="avatar-daire">👤</div>
+        <span>Fotoğrafını buraya ekle</span>
+        <code style="font-size:0.65rem;color:var(--sinir)">img src="berkayo.jpeg"</code>
+      </div>
+      <div class="profil-rozet">✦ Müsait</div>
+    </div>
+    <div class="gizli">
+      <h3 class="bio-baslik">Merhaba! Dijital dünyayı şekillendiriyorum.</h3>
+      <p class="bio-metin">
+        Bilgisayar Programcılığı / Web Tasarım ve Programlama bölümünde öğrenciyim.
+        Kullanıcı deneyimine odaklanan, temiz ve sürdürülebilir kod yazmayı önemsiyorum.
+        Yeni teknolojilere karşı meraklı ve sürekli öğrenmeye açık biriyim.
+      </p>
+      <p class="bio-metin">
+        Kariyer hedefim; front-end geliştirme alanında uzmanlaşarak kullanıcı dostu ve
+        erişilebilir web uygulamaları tasarlayan bir geliştirici olmak.
+      </p>
+      <div class="bilgi-listesi">
+        <div class="bilgi-satiri">
+          <span class="bilgi-etiket">Bölüm</span>
+          <span class="bilgi-deger">Bilgisayar Programcılığı</span>
+        </div>
+        <div class="bilgi-satiri">
+          <span class="bilgi-etiket">Okul</span>
+          <span class="bilgi-deger">Gümüşhane Üniversitesi</span>
+        </div>
+        <div class="bilgi-satiri">
+          <span class="bilgi-etiket">Şehir</span>
+          <span class="bilgi-deger">Trabzon, Türkiye</span>
+        </div>
+        <div class="bilgi-satiri">
+          <span class="bilgi-etiket">E-posta</span>
+          <span class="bilgi-deger"><a href="mailto:berkayozturk04@outlook.com">berkayozturk04@outlook.com</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="yetenekler">
+  <h2 class="bolum-baslik gizli" data-sayi="02">Yetenekler &amp; Eğitim</h2>
+  <div class="ayirici"></div>
+  <div class="yetenekler-izgara">
+    <div class="gizli">
+      <p class="yetenek-grup-baslik">// Teknik Yetkinlikler</p>
+      <div id="yetenek-barlari"></div>
+    </div>
+    <div class="gizli">
+      <p class="yetenek-grup-baslik">// Aldığım Dersler</p>
+      <div class="ders-listesi" id="ders-listesi"></div>
+      <br>
+      <p class="yetenek-grup-baslik" style="margin-top:1.5rem">// Diğer Beceriler</p>
+      <div class="ders-listesi">
+        <span class="ders-etiketi">Git &amp; GitHub</span>
+        <span class="ders-etiketi">Responsive Tasarım</span>
+        <span class="ders-etiketi">Figma (Temel)</span>
+        <span class="ders-etiketi">VS Code</span>
+        <span class="ders-etiketi">Linux CLI (Temel)</span>
+        <span class="ders-etiketi">Agile / Scrum</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJELER -->
+<section id="projeler">
+  <h2 class="bolum-baslik gizli" data-sayi="03">Projeler</h2>
+  <div class="ayirici"></div>
+  <div class="filtre-cubugu gizli" id="filtre-cubugu"></div>
+  <div class="proje-izgara" id="proje-izgarasi"></div>
+</section>
+
+<section id="iletisim">
+  <h2 class="bolum-baslik gizli" data-sayi="04">İletişim</h2>
+  <div class="ayirici"></div>
+  <div class="iletisim-izgara">
+    <div class="gizli">
+      <p class="iletisim-ust">Bir proje fikrin mi var? Beraber çalışmak ister misin? Aşağıdaki kanallardan bana ulaşabilirsin.</p>
+      <div class="sosyal-liste" id="sosyal-liste"></div>
+    </div>
+    <div class="gizli">
+      <div class="iletisim-form">
+        <div class="form-grup">
+          <label>Adın</label>
+          <input type="text" id="form-ad" placeholder="Adın Soyadın">
+        </div>
+        <div class="form-grup">
+          <label>E-posta</label>
+          <input type="email" id="form-email" placeholder="ornek@mail.com">
+        </div>
+        <div class="form-grup">
+          <label>Mesaj</label>
+          <textarea id="form-mesaj" placeholder="Merhaba, seninle..."></textarea>
+        </div>
+        <button class="form-gonder" onclick="mesajGonder()">Gönder →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Berkay Öztürk — Sadece HTML, CSS &amp; JavaScript ile yapıldı.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
