@@ -1,0 +1,2 @@
+# vize-ek
+Vize ödev
